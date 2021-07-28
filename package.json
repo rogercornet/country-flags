@@ -1,0 +1,22 @@
+{
+  "name": "country-flags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "paths": {
+    "svgNogradient": "./SVG-nogradient",
+    "svgSource": "./SVG"
+  },
+  "scripts": {
+    "svg:nogradient": "node nogradient.js",
+    "build:svg": "npm run svg:nogradient && gulp svgflags"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "gulp": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0",
+    "jsdom": "^16.6.0"
+  }
+}
